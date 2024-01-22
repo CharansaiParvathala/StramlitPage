@@ -30,5 +30,5 @@ if st.button('click'):
    st.sidebar.slider('Select a range of values',0.0, 100.0, (25.0, 75.0))
    st.sidebar.progress(0.75)
 
-   with st.expander('ff'):
-        st.write('ggfddvgggtrrfggggtg....1234787')
+   with st.expander('Expand'):
+        st.write('Charansai')
