@@ -1,8 +1,10 @@
 import pandas as pd
 import streamlit as st
-name,photo = st.columns([3,1])
+name,photo = st.columns([2,1])
+st.divider()
+st.write('\n')
 name.title('PARVATHALA CHARANSAI')
-photo.image('https://res.cloudinary.com/dkh9qnxkd/image/upload/v1706102159/Picsart_24-01-24_18-45-28-814_k5dqdz.png',width=200)
+photo.image('https://res.cloudinary.com/dkh9qnxkd/image/upload/v1706102159/Picsart_24-01-24_18-45-28-814_k5dqdz.png',width=110)
 st.divider()
 
 page = st.sidebar.radio('Select Page', ['Home', 'Projects'])
@@ -32,7 +34,7 @@ if page == 'Home':
             st.caption('Former')
             st.write('Sister : Lohitha')
             st.caption('Nurse')
-
+    st.divider()
     st.header('My Skills')
 
     if st.button('skills'):
@@ -70,7 +72,7 @@ if page == 'Home':
             st.progress(60)
 
         st.markdown('LeaderShip Skills')
-
+    st.divider()
     st.header('Certificates')
 
     rad = st.selectbox('Select Option To View', ['Default', 'C', 'SQL', 'Problem Solving'], index=0)
