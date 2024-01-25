@@ -93,7 +93,7 @@ if page == 'Home':
 
     if rad == 'SQL':
         st.markdown("*SQL Basic* Certification From *Hackerrank*n"
-        "HackerRank is well known platform to everyone\"
+        "HackerRank is well known platform to everyone\n"
         "Learning SQL is very challenging and exciting")
         
         st.link_button('See SQL Certificate', 'https://www.hackerrank.com/certificates/0b7851c7519e')
