@@ -201,7 +201,7 @@ if page == 'Feedback':
                 st.warning("Please Fill the Text Field")
              elif but1:
                 st.success('Your feedback is noted. Thank you for sharing your suggestions.')
-    elif feed <= 50:
+    elif feed <= 60:
         st.markdown('\n\n\n\n**Please share your suggestions to help Me to improve the webpage:**')
         with st.form('Form2'):
              sub = st.text_area('Submit your suggestion')
@@ -213,7 +213,7 @@ if page == 'Feedback':
     
     elif feed > 80:
         st.success('Thank you for providing your Positive rating!')
-    elif feed > 50:
+    elif feed > 60:
         suggestion = st.chat_input('Any suggestions to enhance the site?')
         if suggestion:
            st.submit('Your feedback is noted. Thank you for sharing your suggestions.')
