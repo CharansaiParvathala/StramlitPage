@@ -2,7 +2,7 @@ import pandas as pd
 import streamlit as st
 import streamlit.components.v1 as anime
 
-anime.iframe('https://lottie.host/embed/1dabee05-dc38-409b-9a8f-579400feae5f/5Ediq4Q1oU.json')
+anime.iframe('https://giphy.com/gifs/ShenandoahUniversity-su-shenandoah-shenandoahuniversity-F99zOPMJSzLP0ptjRZ')
 st.divider()
 name,photo = st.columns([2,1])
 st.write('\n')
