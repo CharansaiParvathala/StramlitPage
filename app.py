@@ -188,21 +188,21 @@ if page == 'Feedback':
         st.error('I apologize for any disappointment. Share your suggestions:')
         st.markdown('\n\n\n\n**Please share your suggestions to help Me to improve the webpage:**')
         with st.form('Form1'):
-             st.text_area('Submit your suggestion')
-             subm = st.form_submit_button('Submit')
-             if subm = "":
-                st.warning("Please Fill the Text Field")
-             else:
-                st.info('Your feedback is noted. Thank you for sharing your suggestions.')
+             subm = st.text_area('Submit your suggestion')
+             if st.form_submit_button('Submit')
+                if subm = "":
+                   st.warning("Please Fill the Text Field")
+                else:
+                   st.info('Your feedback is noted. Thank you for sharing your suggestions.')
     elif feed <= 50:
         st.markdown('\n\n\n\n**Please share your suggestions to help Me to improve the webpage:**')
         with st.form('Form2'):
-             st.text_area('Submit your suggestion')
-             sub = st.form_submit_button('Submit')
-             if sub = "":
-                st.warning('Please Fill the Text Field')
-             else:
-                st.info('Your feedback is noted. Thank you for sharing your suggestions.')
+             sub = st.text_area('Submit your suggestion')
+             if st.form_submit_button('Submit')
+                if sub = "":
+                   st.warning('Please Fill the Text Field')
+                else:
+                   st.info('Your feedback is noted. Thank you for sharing your suggestions.')
     
     elif feed > 90:
         st.success('Thank you for providing your Positive rating!')
