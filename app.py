@@ -75,7 +75,7 @@ if page == 'Home':
             st.write('Hindi')
             st.progress(60)
 
-        with st.expander('LeaderShip Skills')
+        with st.expander('LeaderShip Skills'):
              st.write('I have good leadership Skills')
              st.progress(75)
     st.divider()
