@@ -183,6 +183,6 @@ if page == 'Projects':
 
 if page == 'Feedback':
    st.chat_input('Any Suggestions To improve the site')
-   feed = int(st.slider('Give Me your rating on this Page'))
-if feed<60:
-   st.text_area('Please suggest me How I can improve my Website')
+   feed = st.slider('Give Me your rating on this Page')
+   if feed<60:
+      st.text_area('Please suggest me How I can improve my Website')
