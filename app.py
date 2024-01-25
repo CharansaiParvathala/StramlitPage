@@ -113,7 +113,7 @@ if page == 'Home':
 
 if page == 'Projects':
     st.header('Projects :')
-    project = st.selectbox('select project',['Default','Ride WebPage','Caculator','Guessing Game'])
+    project = st.selectbox('select project',['Default','Ride WebPage','Calculator','Guessing Game'])
 
     if project== 'Default':
        st.caption('Select a project from above menu')
@@ -141,7 +141,7 @@ if page == 'Projects':
         st.write('**Check Out Project WebPage here**')
         st.link_button('Visit Page','https://charansaiparvathala.github.io/HTML-CSS-Projects/index.html')
 
-    if project == 'Caculator':
+    if project == 'Calculator':
         st.write('***Calculator Using Java with GUI***')
 
         with st.expander('Detailed Description'):
