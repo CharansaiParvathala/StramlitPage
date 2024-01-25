@@ -216,7 +216,7 @@ if page == 'Feedback':
     elif feed > 60:
         suggestion = st.chat_input('Any suggestions to enhance the site?')
         if suggestion:
-           st.submit('Your feedback is noted. Thank you for sharing your suggestions.')
+           st.success('Your feedback is noted. Thank you for sharing your suggestions.')
 if page == 'Resume':
    st.header('Resume :')
    st.image('https://res.cloudinary.com/dkh9qnxkd/image/upload/v1706193445/Screenshot_2024-01-25-20-06-52-215_com.google.android.apps.docs_pqgq35.png')
