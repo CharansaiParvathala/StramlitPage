@@ -186,16 +186,20 @@ if page == 'Feedback':
     
     if feed < 30:
         st.error('I apologize for any disappointment. Share your suggestions:')
-    elif 30 <= feed < 50:
+        st.markdown('**Please share your suggestions to help Me to improve the webpage:**')
+        st.text_area('Submit your suggestion')
+        if st.button('Submit'):
+            st.info('Your feedback is noted. Thank you for sharing your suggestions.')
+    elif feed <= 50:
         st.markdown('**Please share your suggestions to help Me to improve the webpage:**')
         st.text_area('Submit your suggestion')
         if st.button('Submit'):
             st.info('Your feedback is noted. Thank you for sharing your suggestions.')
     
-    if feed > 90:
+    elif feed > 90:
         st.success('Thank you for providing your Positive rating!')
-    else:
-        user_suggestions = st.chat_input('Any additional suggestions to enhance the site?')
+    elif feed > 50
+        user_suggestions = st.chat_input('Any suggestions to enhance the site?')
         if user_suggestions:
             st.info('Your feedback is noted. Thank you for sharing your suggestions.')
  
