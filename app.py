@@ -101,7 +101,8 @@ if page == 'Home':
     if rad == 'Problem Solving':
         st.markdown("*Problem Solving Basic* certification from *Hackerrank*\n"
         "While learning Problem solving Certificate from Hackerrank\n"
-   "It was very challenging and difficult to learn\" "But i would like to learn more difficult courses in future")
+   "It was very challenging and difficult to learn\n"
+ "But i would like to learn more difficult courses in future")
         st.link_button('See P&S certificate', 'https://www.hackerrank.com/certificates/82e28a3a07c4')
 
 if page == 'Projects':
