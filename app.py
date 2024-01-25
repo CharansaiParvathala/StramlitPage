@@ -185,7 +185,7 @@ if page == 'Feedback':
     feed = st.slider('Please rate this page (0-100)', min_value=0, max_value=100, value=50)
     
     if feed < 30:
-        st.error('I apologize for any disappointment. Share your suggestions:')
+        st.info('I apologize for any disappointment. Share your suggestions:')
         st.markdown('\n\n\n\n**Please share your suggestions to help Me to improve the webpage:**')
         with st.form('Form1'):
              subm = st.text_area('Submit your suggestion')
@@ -193,7 +193,7 @@ if page == 'Feedback':
              if subm == "" and but1:
                 st.warning("Please Fill the Text Field")
              elif but1:
-                st.info('Your feedback is noted. Thank you for sharing your suggestions.')
+                st.success('Your feedback is noted. Thank you for sharing your suggestions.')
     elif feed <= 50:
         st.markdown('\n\n\n\n**Please share your suggestions to help Me to improve the webpage:**')
         with st.form('Form2'):
@@ -202,7 +202,7 @@ if page == 'Feedback':
              if sub == "" and but2:
                 st.warning('Please Fill the Text Field')
              elif but2:
-                st.info('Your feedback is noted. Thank you for sharing your suggestions.')
+                st.success('Your feedback is noted. Thank you for sharing your suggestions.')
     
     elif feed > 90:
         st.success('Thank you for providing your Positive rating!')
