@@ -4,8 +4,8 @@ from streamlit_option_menu import option_menu
 
 page = option_menu(
     menu_title=None,
-    options=['Home', 'Projects', 'Feedback'],
-    icons=['house-fill', 'chat-dots-fill', 'browser-edge'],
+    options=['Home', 'Projects', 'Resume', 'Feedback'],
+    icons=['house-fill', 'chat-dots-fill','file-earmark-person-fill', 'browser-edge'],
     default_index=0,
     orientation='horizontal'
 )
@@ -217,4 +217,6 @@ if page == 'Feedback':
         suggestion = st.chat_input('Any suggestions to enhance the site?')
         if suggestion:
            st.submit('Your feedback is noted. Thank you for sharing your suggestions.')
+if page = 'Resume':
+    st.link_button('https://drive.google.com/uc?export=download&id=1-6jKYPIJATwLgYcg6vySYeJu2sCCc0cA')
  
