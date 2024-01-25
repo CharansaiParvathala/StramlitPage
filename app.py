@@ -1,16 +1,21 @@
 import pandas as pd
 import streamlit as st
-import streamlit.components.v1 as anime
+from streamlit_option_menu import option_menu
 
-anime.iframe('https://giphy.com/gifs/ShenandoahUniversity-su-shenandoah-shenandoahuniversity-F99zOPMJSzLP0ptjRZ')
+page = option_menu(
+    menu_title=None,
+    options=['Home', 'Projects', 'Feedback'],
+    icons=['house-fill', 'chat-dots-fill', 'browser-edge'],
+    default_index=0,
+    orientation='horizontal'
+)
+
 st.divider()
 name,photo = st.columns([2,1])
 st.write('\n')
 name.title('PARVATHALA CHARANSAI')
 photo.image('https://res.cloudinary.com/dkh9qnxkd/image/upload/v1706102159/Picsart_24-01-24_18-45-28-814_k5dqdz.png',width=110)
 st.divider()
-
-page = st.sidebar.radio('Select Page', ['Home', 'Projects','Feedback'])
 
 if page == 'Home':
 
