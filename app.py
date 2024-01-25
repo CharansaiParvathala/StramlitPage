@@ -219,7 +219,7 @@ if page == 'Feedback':
            st.submit('Your feedback is noted. Thank you for sharing your suggestions.')
 if page == 'Resume':
    st.header('Resume :')
-    st.image('https://res.cloudinary.com/dkh9qnxkd/image/upload/v1706193445/Screenshot_2024-01-25-20-06-52-215_com.google.android.apps.docs_pqgq35.png')
+   st.image('https://res.cloudinary.com/dkh9qnxkd/image/upload/v1706193445/Screenshot_2024-01-25-20-06-52-215_com.google.android.apps.docs_pqgq35.png')
    st.header('Dowload Resume Here :')
    st.link_button('Dowload','https://drive.google.com/uc?export=download&id=1-6jKYPIJATwLgYcg6vySYeJu2sCCc0cA')
  
