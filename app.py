@@ -185,11 +185,11 @@ if page == 'Feedback':
    feed = st.slider('Give Me your rating on this Page')
    if feed > 90:
       st.success('Thank you for giving your valuable Rating')
-   else if feed == 50:
+   elif feed == 50:
       pass
    if feed < 60:
       st.text_area('Please suggest me How I can improve my Website')
-   else if feed > 60:
+   elif feed > 60:
       st.chat_input('Any Suggestions To improve the site')
     
    
