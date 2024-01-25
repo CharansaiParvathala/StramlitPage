@@ -8,9 +8,20 @@ photo.image('https://res.cloudinary.com/dkh9qnxkd/image/upload/v1706102159/Picsa
 st.divider()
 
 page = st.sidebar.radio('Select Page', ['Home', 'Projects'])
+bg = st.checkbox('Theme')
+if bg:
+   st.markdown(
+      """
+      <style>
+         body{
+              background-image: url('https://res.cloudinary.com/dkh9qnxkd/image/upload/v1706158899/abstract-background-images-wallpaper-ai-generated_643360-21667_lflmq3.jpg');
+              background-size: cover;
+              background-attachment: fixed;
+             }
+     </style>
+     """,unsafe_allow_html=True;
+       )
 chat = st.chat_input('Any Suggestions')
-if chat:
-   st.success('Thanks For The Feedback')
 
 if page == 'Home':
     st.header('My Details')
