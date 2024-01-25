@@ -8,8 +8,8 @@ photo.image('https://res.cloudinary.com/dkh9qnxkd/image/upload/v1706102159/Picsa
 st.divider()
 
 page = st.sidebar.radio('Select Page', ['Home', 'Projects'])
-st.chat_input('Any Suggestions')
-st.balloons()
+st.sidebar.chat_input('Any Suggestions')
+
 if page == 'Home':
     st.header('My Details')
 
