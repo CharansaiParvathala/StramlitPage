@@ -189,8 +189,11 @@ if page == 'Feedback':
         st.markdown('\n\n\n\n**Please share your suggestions to help Me to improve the webpage:**')
         with st.form('Form1'):
              st.text_area('Submit your suggestion')
-             if st.form_submit_button('Submit'):
-            st.info('Your feedback is noted. Thank you for sharing your suggestions.')
+             subm = st.form_submit_button('Submit')
+             if subm = "":
+                st.warning("Please Fill the Text Field")
+             else:
+                st.info('Your feedback is noted. Thank you for sharing your suggestions.')
     elif feed <= 50:
         st.markdown('\n\n\n\n**Please share your suggestions to help Me to improve the webpage:**')
         with st.form('Form2'):
