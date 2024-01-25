@@ -192,7 +192,7 @@ if page == 'Feedback':
    elif feed < 50:
       st.markdown('**Give me Suggestion So that I can improve the webpage:**')
       st.text_area('Submit your suggestion')
-      if st.button('Submit')
+      if st.button('Submit'):
          st.info('Your Feedback noted Thankyou for suggestion')
    elif feed > 60:
       char = st.chat_input('Any Suggestions To improve the site')
