@@ -211,7 +211,7 @@ if page == 'Feedback':
              elif but2:
                 st.success('Your feedback is noted. Thank you for sharing your suggestions.')
     
-    elif feed > 90:
+    elif feed > 80:
         st.success('Thank you for providing your Positive rating!')
     elif feed > 50:
         suggestion = st.chat_input('Any suggestions to enhance the site?')
