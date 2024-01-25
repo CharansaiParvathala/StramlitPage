@@ -32,9 +32,9 @@ if page == 'Home':
             st.table(pd.DataFrame(data))
 
         with st.expander('Family Details'):
-            st.write('Mother Name: Suneethamma')
+            st.write('Mother Name: Sunithamma')
             st.caption('Domestic engineer')
-            st.write('Father Name: Radhakrishnan')
+            st.write('Father Name: Radhakrishnaiah')
             st.caption('Former')
             st.write('Sister Name: Lohitha')
             st.caption('Nurse')
@@ -45,7 +45,7 @@ if page == 'Home':
         st.subheader('Technical Skills :')
 
         with st.expander('C'):
-            st.write('I have very good skills in C')
+            st.write('I posses very good skills in C')
             st.progress(100)
 
         with st.expander('Java'):
@@ -54,15 +54,15 @@ if page == 'Home':
             st.progress(100)
 
         with st.expander('SQL'):
-            st.write('I can work on databases with sql')
+            st.write('I can work on databases with SQL')
             st.progress(100)
 
         with st.expander('DSA'):
-            st.write('I can implement data structures using c & java')
+            st.write('I can implement data structures using C & JAVA')
             st.progress(95)
 
         with st.expander('Problem Solving'):
-            st.write('I have good problem solving ability')
+            st.write('I have a good problem solving ability')
             st.progress(80)
 
         st.subheader('Personal Skills :')
@@ -84,7 +84,7 @@ if page == 'Home':
     rad = st.selectbox('Select Option To View', ['Default', 'C', 'SQL', 'Problem Solving'], index=0)
 
     if rad == 'C':
-        st.markdown("**C** Certification From **Sololearn**")
+        st.markdown("**C** Certification From **Sololearn**\n\n")
         st.markdown("Sololearn is an application\n"
 "we can learn many programing languages from it\n"
 "While I am learning C certification it was very fun to learn in sololearn")
@@ -92,14 +92,14 @@ if page == 'Home':
         st.link_button('See C certificate', 'https://www.sololearn.com/en/certificates/CC-FLQMAH71')
 
     if rad == 'SQL':
-        st.markdown("**SQL Basic** Certification From **Hackerrank**\n"
+        st.markdown("**SQL Basic** Certification From **Hackerrank**\n\n"
         "HackerRank is well known platform to everyone\n"
         "Learning SQL is very challenging and exciting")
         
         st.link_button('See SQL Certificate', 'https://www.hackerrank.com/certificates/0b7851c7519e')
 
     if rad == 'Problem Solving':
-        st.markdown("**Problem Solving Basic** certification from **Hackerrank**\n"
+        st.markdown("**Problem Solving Basic** certification from **Hackerrank**\n\n"
         "While learning Problem solving Certificate from Hackerrank\n"
    "It was very challenging and difficult to learn\n"
  "But i would like to learn more difficult courses in future")
