@@ -9,7 +9,7 @@ st.divider()
 
 page = st.sidebar.radio('Select Page', ['Home', 'Projects'])
 bg = st.checkbox('Theme')
-if bg:
+if True:
    st.markdown(
       """
       <style>
