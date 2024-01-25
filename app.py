@@ -217,6 +217,6 @@ if page == 'Feedback':
         suggestion = st.chat_input('Any suggestions to enhance the site?')
         if suggestion:
            st.submit('Your feedback is noted. Thank you for sharing your suggestions.')
-if page = 'Resume':
+if page == 'Resume':
     st.link_button('https://drive.google.com/uc?export=download&id=1-6jKYPIJATwLgYcg6vySYeJu2sCCc0cA')
  
