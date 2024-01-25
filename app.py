@@ -192,7 +192,7 @@ if page == 'Feedback':
              but1 = st.form_submit_button('Submit')
              if subm == "" and but1:
                 st.warning("Please Fill the Text Field")
-             else:
+             elif but1:
                 st.info('Your feedback is noted. Thank you for sharing your suggestions.')
     elif feed <= 50:
         st.markdown('\n\n\n\n**Please share your suggestions to help Me to improve the webpage:**')
@@ -201,7 +201,7 @@ if page == 'Feedback':
              but2 = st.form_submit_button('Submit')
              if sub == "" and but2:
                 st.warning('Please Fill the Text Field')
-             else:
+             elif but2:
                 st.info('Your feedback is noted. Thank you for sharing your suggestions.')
     
     elif feed > 90:
