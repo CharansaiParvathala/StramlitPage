@@ -84,22 +84,22 @@ if page == 'Home':
     rad = st.selectbox('Select Option To View', ['Default', 'C', 'SQL', 'Problem Solving'], index=0)
 
     if rad == 'C':
-        st.markdown('*C* Certification From *Sololearn*')
-        st.narkdown("Sololearn is an application\n"
+        st.markdown("**C** Certification From **Sololearn**")
+        st.markdown("Sololearn is an application\n"
 "we can learn many programing languages from it\n"
-"While I am learning C certification it was very fun to learn in *sololearn*")
+"While I am learning C certification it was very fun to learn in sololearn")
         
         st.link_button('See C certificate', 'https://www.sololearn.com/en/certificates/CC-FLQMAH71')
 
     if rad == 'SQL':
-        st.markdown("*SQL Basic* Certification From *Hackerrank*n"
+        st.markdown("**SQL Basic** Certification From **Hackerrank**\n"
         "HackerRank is well known platform to everyone\n"
         "Learning SQL is very challenging and exciting")
         
         st.link_button('See SQL Certificate', 'https://www.hackerrank.com/certificates/0b7851c7519e')
 
     if rad == 'Problem Solving':
-        st.markdown("*Problem Solving Basic* certification from *Hackerrank*\n"
+        st.markdown("**Problem Solving Basic** certification from **Hackerrank**\n"
         "While learning Problem solving Certificate from Hackerrank\n"
    "It was very challenging and difficult to learn\n"
  "But i would like to learn more difficult courses in future")
