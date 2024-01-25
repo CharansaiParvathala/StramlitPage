@@ -187,7 +187,7 @@ if page == 'Feedback':
       st.success('Thank you for giving your valuable Rating')
    elif feed == 50:
       pass
-   if feed < 60:
+   elif feed < 60:
       st.markdown('**Give me Suggestion :**')
       st.text_area('Please suggest me How I can improve my Website')
    elif feed > 60:
