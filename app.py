@@ -190,7 +190,7 @@ if page == 'Feedback':
         with st.form('Form1'):
              subm = st.text_area('Submit your suggestion')
              but1 = st.form_submit_button('Submit')
-             if subm = "" and but1:
+             if subm == "" and but1:
                 st.warning("Please Fill the Text Field")
              else:
                 st.info('Your feedback is noted. Thank you for sharing your suggestions.')
@@ -199,7 +199,7 @@ if page == 'Feedback':
         with st.form('Form2'):
              sub = st.text_area('Submit your suggestion')
              but2 = st.form_submit_button('Submit')
-             if sub = "" and but2:
+             if sub == "" and but2:
                 st.warning('Please Fill the Text Field')
              else:
                 st.info('Your feedback is noted. Thank you for sharing your suggestions.')
@@ -208,7 +208,7 @@ if page == 'Feedback':
         st.success('Thank you for providing your Positive rating!')
     elif feed > 50:
         suggestion = st.chat_input('Any suggestions to enhance the site?')
-        if suggestion = "":
+        if suggestion == "":
            st.warning("Please Fill the Chat Field")
         else:
            st.info('Your feedback is noted. Thank you for sharing your suggestions.')
