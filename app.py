@@ -210,6 +210,6 @@ if page == 'Feedback':
         suggestion = st.chat_input('Any suggestions to enhance the site?')
         if suggestion == "":
            st.warning("Please Fill the Chat Field")
-        else:
+        elif suggestion:
            st.info('Your feedback is noted. Thank you for sharing your suggestions.')
  
