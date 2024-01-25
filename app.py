@@ -10,7 +10,7 @@ st.divider()
 page = st.sidebar.radio('Select Page', ['Home', 'Projects'])
 chat = st.chat_input('Any Suggestions')
 if chat:
-   st.balloons()
+   st.success('Thanks For The Feedback')
 
 if page == 'Home':
     st.header('My Details')
