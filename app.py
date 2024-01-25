@@ -182,7 +182,14 @@ if page == 'Projects':
         st.link_button('Code','https://github.com/CharansaiParvathala/JavaProjects/blob/JavaCalculator/JavaGuessingGame.java')
 
 if page == 'Feedback':
-   st.chat_input('Any Suggestions To improve the site')
    feed = st.slider('Give Me your rating on this Page')
-   if feed<60:
+   if feed > 90:
+      st.success('Thank you for giving your valuable Rating')
+   else if feed == 50:
+      pass
+   if feed < 60:
       st.text_area('Please suggest me How I can improve my Website')
+   else if feed > 60:
+      st.chat_input('Any Suggestions To improve the site')
+    
+   
