@@ -187,13 +187,13 @@ if page == 'Feedback':
     if feed < 30:
         st.error('I apologize for any disappointment. Share your suggestions:')
         st.markdown('\n\n\n\n**Please share your suggestions to help Me to improve the webpage:**')
-        with st.form('Form1')
+        with st.form('Form1'):
              st.text_area('Submit your suggestion')
              if st.form_submit_button('Submit'):
             st.info('Your feedback is noted. Thank you for sharing your suggestions.')
     elif feed <= 50:
         st.markdown('\n\n\n\n**Please share your suggestions to help Me to improve the webpage:**')
-        with st.form('Form2')
+        with st.form('Form2'):
              st.text_area('Submit your suggestion')
              sub = st.form_submit_button('Submit')
              if sub = "":
