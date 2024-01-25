@@ -1,6 +1,8 @@
 import pandas as pd
 import streamlit as st
+import streamlit.components.v1 as anime
 
+anime.iframe('https://tenor.com/view/lurakya-lura-finger-spin-anime-meme-meme-gif-9545127599767826369')
 st.divider()
 name,photo = st.columns([2,1])
 st.write('\n')
