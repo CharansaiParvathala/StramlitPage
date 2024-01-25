@@ -1,1 +1,1 @@
-streamlit-option-menu==<version>
+streamlit-option-menu==0.3.6
