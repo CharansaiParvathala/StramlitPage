@@ -8,11 +8,10 @@ name.title('PARVATHALA CHARANSAI')
 photo.image('https://res.cloudinary.com/dkh9qnxkd/image/upload/v1706102159/Picsart_24-01-24_18-45-28-814_k5dqdz.png',width=110)
 st.divider()
 
-page = st.sidebar.radio('Select Page', ['Home', 'Projects'])
-
-chat = st.chat_input('Any Suggestions')
+page = st.sidebar.radio('Select Page', ['Home', 'Projects','Feedback'])
 
 if page == 'Home':
+
     st.header('My Details')
 
     if st.button('Show Details'):
@@ -181,3 +180,9 @@ if page == 'Projects':
                         "Dive into the world of Java GUI gaming with our Guessing Game. Experience the perfect blend of simplicity, interactivity, and visual appeal. Happy guessing!")
         st.write('**Check Source Code here :**')
         st.link_button('Code','https://github.com/CharansaiParvathala/JavaProjects/blob/JavaCalculator/JavaGuessingGame.java')
+
+if page == 'Feedback':
+   st.chat_input('Any Suggestions To improve the site')
+   feed = st.slider('Give Me your rating on this Page')
+if feed<60:
+   st.text_area('Please suggest me How I can improve my Website')
