@@ -1,47 +1,47 @@
 import pandas as pd
 import streamlit as st
-name,photo = st.columns([2,1])
+
 st.divider()
+name,photo = st.columns([2,1])
 st.write('\n')
 name.title('PARVATHALA CHARANSAI')
 photo.image('https://res.cloudinary.com/dkh9qnxkd/image/upload/v1706102159/Picsart_24-01-24_18-45-28-814_k5dqdz.png',width=110)
 st.divider()
 
 page = st.sidebar.radio('Select Page', ['Home', 'Projects'])
-bg = st.checkbox('Theme')
-if bg:
-    st.image('https://res.cloudinary.com/dkh9qnxkd/image/upload/v1706158899/abstract-background-images-wallpaper-ai-generated_643360-21667_lflmq3.jpg', use_column_width=True)
+
 chat = st.chat_input('Any Suggestions')
 
 if page == 'Home':
     st.header('My Details')
 
-    if st.button('Details'):
+    if st.button('Show Details'):
         with st.expander('Personal Details'):
             st.write('Name : Charansai Parvathala')
-            st.caption('Software Students - pursuing b.tech 2nd year')
+            st.caption('Software Engineering Student - pursuing b.tech 2nd year')
+            st.caption('In Audisankara college of engineering and technology')
             st.write('Address : Momidi, Chillakur, Nellore 524412')
             st.write('Phone : 8367454451')
             st.write('Mail : charansaiparvathala@gmail.com')
 
         with st.expander('Educational Details'):
-            data = {'Education': ['B.Tech', 'Intermediate', '10th'],
+            data = {'Education': ['B.Tech', 'Intermediate', '10th'],'Course': ['CSE','MPC','Regular'],
                     'College Name': ['Audisankara college of engineering and technology',
-                                     'Sri Balaji jr college', 'ZPHS Govt'],
+                                     'Sri Balaji junior college', 'ZPHS Govt (Varagali)'],
                     'Percentage': ['80%', '60%', '87%']}
             st.table(pd.DataFrame(data))
 
         with st.expander('Family Details'):
-            st.write('Mother : Suneethamma')
+            st.write('Mother Name: Suneethamma')
             st.caption('Domestic engineer')
-            st.write('Father : Radhakrishnan')
+            st.write('Father Name: Radhakrishnan')
             st.caption('Former')
-            st.write('Sister : Lohitha')
+            st.write('Sister Name: Lohitha')
             st.caption('Nurse')
     st.divider()
     st.header('My Skills')
 
-    if st.button('skills'):
+    if st.button('Show skills'):
         st.subheader('Technical Skills :')
 
         with st.expander('C'):
@@ -75,23 +75,34 @@ if page == 'Home':
             st.write('Hindi')
             st.progress(60)
 
-        st.markdown('LeaderShip Skills')
+        with st.expander('LeaderShip Skills')
+             st.write('I have good leadership Skills')
+             st.progress(75)
     st.divider()
     st.header('Certificates')
 
     rad = st.selectbox('Select Option To View', ['Default', 'C', 'SQL', 'Problem Solving'], index=0)
 
     if rad == 'C':
-        st.write('C Certification From Sololearn')
-        st.link_button('C', 'https://www.sololearn.com/en/certificates/CC-FLQMAH71')
+        st.markdown('*C* Certification From *Sololearn*')
+        st.narkdown("Sololearn is an application\n"
+"we can learn many programing languages from it\n"
+"While I am learning C certification it was very fun to learn in *sololearn*")
+        
+        st.link_button('See C certificate', 'https://www.sololearn.com/en/certificates/CC-FLQMAH71')
 
     if rad == 'SQL':
-        st.write('SQL Basic Certification From Hackerrank')
-        st.link_button('SQL', 'https://www.hackerrank.com/certificates/0b7851c7519e')
+        st.markdown("*SQL Basic* Certification From *Hackerrank*n"
+        "HackerRank is well known platform to everyone\"
+        "Learning SQL is very challenging and exciting")
+        
+        st.link_button('See SQL Certificate', 'https://www.hackerrank.com/certificates/0b7851c7519e')
 
     if rad == 'Problem Solving':
-        st.write('Problem Solving Basic certification from Hackerrank')
-        st.link_button('P&S', 'https://www.hackerrank.com/certificates/82e28a3a07c4')
+        st.markdown("*Problem Solving Basic* certification from *Hackerrank*\n"
+        "While learning Problem solving Certificate from Hackerrank\n"
+   "It was very challenging and difficult to learn\" "But i would like to learn more difficult courses in future")
+        st.link_button('See P&S certificate', 'https://www.hackerrank.com/certificates/82e28a3a07c4')
 
 if page == 'Projects':
     st.header('Projects :')
