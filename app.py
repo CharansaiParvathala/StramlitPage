@@ -19,7 +19,7 @@ if bg:
               background-attachment: fixed;
              }
      </style>
-     """,unsafe_allow_html=True;
+     """,unsafe_allow_html=True
        )
 chat = st.chat_input('Any Suggestions')
 
