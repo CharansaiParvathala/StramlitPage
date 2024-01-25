@@ -182,21 +182,22 @@ if page == 'Projects':
         st.link_button('Code','https://github.com/CharansaiParvathala/JavaProjects/blob/JavaCalculator/JavaGuessingGame.java')
 
 if page == 'Feedback':
-    feed = st.slider('Give Me your rating on this Page', min_value=0, max_value=100, value=50)
+    feed = st.slider('Please rate this page (0-100)', min_value=0, max_value=100, value=50)
     
     if feed < 30:
-        st.warning('Sorry for the disappointment')
-    elif feed > 90:
-        st.success('Thank you for giving your valuable Rating')
-    elif feed == 50:
-        pass
-    elif feed < 50:
-        st.markdown('**Give me Suggestion So that I can improve the webpage:**')
+        st.error('We apologize for any disappointment. Share your suggestions:')
         st.text_area('Submit your suggestion')
         if st.button('Submit'):
-            st.info('Your Feedback noted. Thank you for the suggestion')
+            st.info('Your feedback is noted. Thank you for sharing your suggestions.')
+    elif feed > 90:
+        st.success('Thank you for providing your valuable rating!')
+    elif feed < 50:
+        st.markdown('**Please share your suggestions to help us improve the webpage:**')
+        st.text_area('Submit your suggestion')
+        if st.button('Submit'):
+            st.info('Your feedback is noted. Thank you for sharing your suggestions.')
     elif feed > 60:
-        char = st.chat_input('Any Suggestions To improve the site')
-        if char:
-            st.info('Your Feedback noted. Thank you for the suggestion')
+        suggestion = st.chat_input('Any additional suggestions to enhance the site?')
+        if suggestion:
+            st.info('Your feedback is noted. Thank you for sharing your suggestions.')
  
