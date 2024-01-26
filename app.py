@@ -13,7 +13,7 @@ page = option_menu(
 st.divider()
 logo,name,photo = st.columns([1,2,1])
 st.write('\n')
-logo.image('https://res.cloudinary.com/dkh9qnxkd/image/upload/v1706244774/Picsart_24-01-20_10-34-53-249_hpxrl2.png'width=90)
+logo.image('https://res.cloudinary.com/dkh9qnxkd/image/upload/v1706244774/Picsart_24-01-20_10-34-53-249_hpxrl2.png',width=90)
 name.title('PARVATHALA CHARANSAI')
 photo.image('https://res.cloudinary.com/dkh9qnxkd/image/upload/v1706102159/Picsart_24-01-24_18-45-28-814_k5dqdz.png',width=110)
 st.divider()
