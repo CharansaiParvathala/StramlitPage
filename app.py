@@ -191,7 +191,7 @@ if page == 'Projects':
 if page == 'Feedback':
     feed = st.slider('Please rate this page (0-10)', min_value=0, max_value=10, value=5)
     
-    if feed < 2:
+    if feed < 3:
         st.info('I apologize for any disappointment. Share your suggestions:')
         st.markdown('\n\n\n\n**Please share your suggestions to help Me to improve the webpage:**')
         with st.form('Form1'):
