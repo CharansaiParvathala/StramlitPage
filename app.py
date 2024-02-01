@@ -14,7 +14,7 @@ st.divider()
 name,photo = st.columns([2,1])
 st.write('\n')
 name.title('PARVATHALA CHARANSAI')
-photo.image('https://res.cloudinary.com/dkh9qnxkd/image/upload/v1706102159/Picsart_24-01-24_18-45-28-814_k5dqdz.png',width=110)
+photo.image('https://drive.google.com/uc?id=129s6ZOSKsGV-dR276Y3jzTT-Czo3xN9l&export=download',width=110)
 st.divider()
 
 if page == 'Home':
