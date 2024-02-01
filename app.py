@@ -221,5 +221,5 @@ if page == 'Resume':
    st.header('Resume :')
    st.image('https://res.cloudinary.com/dkh9qnxkd/image/upload/v1706584569/Screenshot_2024-01-30-08-44-07-903_com.google.android.apps.docs_pxy16d.png')
    st.markdown('### Dowload Resume Here :')
-   link_button('Dowload','https://drive.google.com/uc?id=129s6ZOSKsGV-dR276Y3jzTT-Czo3xN9l&export=download')
+   st.link_button('Dowload','https://drive.google.com/uc?id=129s6ZOSKsGV-dR276Y3jzTT-Czo3xN9l&export=download')
  
