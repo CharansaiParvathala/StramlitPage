@@ -17,11 +17,6 @@ name.title('PARVATHALA CHARANSAI')
 photo.image('https://drive.google.com/uc?id=129s6ZOSKsGV-dR276Y3jzTT-Czo3xN9l&export=download',width=110)
 st.divider()
 
-def download_Resume(url, text):
-    html = f'<a href="{url}" target="_blank">{text}</a>'
-    st.markdown(html, unsafe_allow_html=True)
-
-
 if page == 'Home':
 
     st.header('My Details')
@@ -226,5 +221,5 @@ if page == 'Resume':
    st.header('Resume :')
    st.image('https://res.cloudinary.com/dkh9qnxkd/image/upload/v1706584569/Screenshot_2024-01-30-08-44-07-903_com.google.android.apps.docs_pxy16d.png')
    st.markdown('### Dowload Resume Here :')
-   download_Resume('https://drive.google.com/uc?id=129s6ZOSKsGV-dR276Y3jzTT-Czo3xN9l&export=download', 'Click me')
+   link_button('Dowload','https://drive.google.com/uc?id=129s6ZOSKsGV-dR276Y3jzTT-Czo3xN9l&export=download')
  
